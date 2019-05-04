@@ -1,0 +1,38 @@
+.root {
+  border: 1px solid transparent;
+  border-radius: 2px;
+
+  padding: 0;
+  margin-bottom: 0;
+
+  transition: 0.25s padding, 0.4s margin-bottom, 0.4s border-color;
+}
+
+.root.remoteActive {
+  padding: 8px;
+  margin-bottom: 4px;
+  border-color: #d3d3d3;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main > * + * {
+  margin-left: 8px;
+}
+
+.remoteSection {
+  padding: 0 0 0 24px;
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height 1s;
+  box-sizing: border-box;
+}
+
+.remoteActive .remoteSection {
+  max-height: 200px;
+}

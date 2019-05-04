@@ -1,0 +1,19 @@
+.root {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.label {
+  display: block;
+  width: 100%;
+  color: #777;
+  font-size: 0.8em;
+}
+
+.input {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  font-size: 1.2em;
+}
